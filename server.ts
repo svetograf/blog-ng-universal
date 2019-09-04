@@ -33,12 +33,13 @@ app.set('view engine', 'html');
 app.set('views', join(DIST_FOLDER, 'browser'));
 
 // Example Express Rest API endpoints
-// app.get('/api/**', (req, res) => { });
+app.get('/api/**', (req, res) => { });
 
 // Server static files from /browser
 app.get('*.*', express.static(join(DIST_FOLDER, 'browser'), {
   maxAge: '1y'
 }));
+app.get('robots.txt', express.static('/'));
 
 // All regular routes use the Universal engine
 app.get('*', (req, res) => {
