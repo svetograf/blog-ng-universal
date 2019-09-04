@@ -15,8 +15,8 @@ import {TransferHttpCacheModule} from '@nguniversal/common';
     BrowserModule.withServerTransition({appId: 'my-app'}),
     RouterModule.forRoot([
       { path: '', component: HomeComponent, pathMatch: 'full'},
-      { path: 'lazy', loadChildren: './lazy/lazy.module#LazyModule'},
-      { path: 'lazy/nested', loadChildren: './lazy/lazy.module#LazyModule'}
+      { path: 'articles', loadChildren: './articles/articles.module#ArticlesModule'},
+      { path: 'articles/nested', loadChildren: './articles/articles.module#ArticlesModule'},
     ]),
     TransferHttpCacheModule,
   ],

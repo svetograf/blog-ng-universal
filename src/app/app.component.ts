@@ -7,8 +7,8 @@ import {Component} from '@angular/core';
     <h1>Angular Universal Demo utilizing Angular & Angular CLI</h1>
     <nav class="nav-links">
       <a routerLink="/">Home</a>
-      <a routerLink="/lazy">Lazy-loaded Route</a>
-      <a routerLink="/lazy/nested">Nested Routes work too</a>
+      <a routerLink="/articles">Lazy-loaded Route</a>
+      <a routerLink="/articles/nested">Nested Routes work too</a>
     </nav>
     <div class="router-container">
       <router-outlet></router-outlet>
